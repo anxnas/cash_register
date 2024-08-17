@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+
+<html lang="ru" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Модули &#8212; документация Cash Register 1.0</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=12dfc556" />
+    <script src="_static/documentation_options.js?v=9ca2116e"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=9bfe3ffa"></script>
+    <link rel="index" title="Алфавитный указатель" href="genindex.html" />
+    <link rel="search" title="Поиск" href="search.html" />
+    <link rel="next" title="Тесты" href="tests.html" />
+    <link rel="prev" title="Добро пожаловать в документацию Cash Register!" href="index.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="module-shop.log_config">
+<span id="id1"></span><h1>Модули<a class="headerlink" href="#module-shop.log_config" title="Ссылка на этот заголовок">¶</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.log_config.</span></span><span class="sig-name descname"><span class="pre">LogConfig</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">log_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_bytes</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">104857600</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">backup_count</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.log_config.LogConfig" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для настройки логирования.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig.log_file_name">
+<span class="sig-name descname"><span class="pre">log_file_name</span></span><a class="headerlink" href="#shop.log_config.LogConfig.log_file_name" title="Link to this definition">¶</a></dt>
+<dd><p>Имя файла для логов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig.max_bytes">
+<span class="sig-name descname"><span class="pre">max_bytes</span></span><a class="headerlink" href="#shop.log_config.LogConfig.max_bytes" title="Link to this definition">¶</a></dt>
+<dd><p>Максимальный размер файла логов в байтах.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig.backup_count">
+<span class="sig-name descname"><span class="pre">backup_count</span></span><a class="headerlink" href="#shop.log_config.LogConfig.backup_count" title="Link to this definition">¶</a></dt>
+<dd><p>Количество резервных копий файлов логов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig.encoding">
+<span class="sig-name descname"><span class="pre">encoding</span></span><a class="headerlink" href="#shop.log_config.LogConfig.encoding" title="Link to this definition">¶</a></dt>
+<dd><p>Кодировка файла логов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.log_config.LogConfig.setup_logging">
+<span class="sig-name descname"><span class="pre">setup_logging</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shop.log_config.LogConfig.setup_logging" title="Link to this definition">¶</a></dt>
+<dd><p>Настройка логирования.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-shop.models">
+<dt class="sig sig-object py" id="shop.models.Item">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.models.</span></span><span class="sig-name descname"><span class="pre">Item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.models.Item" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<p>Модель для представления товара.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.models.Item.title">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#shop.models.Item.title" title="Link to this definition">¶</a></dt>
+<dd><p>Наименование товара.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.models.Item.price">
+<span class="sig-name descname"><span class="pre">price</span></span><a class="headerlink" href="#shop.models.Item.price" title="Link to this definition">¶</a></dt>
+<dd><p>Стоимость товара.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Decimal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="shop.models.Item.DoesNotExist">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#shop.models.Item.DoesNotExist" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">ObjectDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="shop.models.Item.MultipleObjectsReturned">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">MultipleObjectsReturned</span></span><a class="headerlink" href="#shop.models.Item.MultipleObjectsReturned" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">MultipleObjectsReturned</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.models.Item.id">
+<span class="sig-name descname"><span class="pre">id</span></span><a class="headerlink" href="#shop.models.Item.id" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.models.Item.objects">
+<span class="sig-name descname"><span class="pre">objects</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;django.db.models.manager.Manager</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#shop.models.Item.objects" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id0">
+<span class="sig-name descname"><span class="pre">price</span></span><a class="headerlink" href="#id0" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="id2">
+<span class="sig-name descname"><span class="pre">title</span></span><a class="headerlink" href="#id2" title="Link to this definition">¶</a></dt>
+<dd><p>A wrapper for a deferred-loading field. When the value is read from this
+object the first time, the query is executed.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-shop.serializers">
+<dt class="sig sig-object py" id="shop.serializers.ItemSerializer">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.serializers.</span></span><span class="sig-name descname"><span class="pre">ItemSerializer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.serializers.ItemSerializer" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">ModelSerializer</span></code></p>
+<dl class="py class">
+<dt class="sig sig-object py" id="shop.serializers.ItemSerializer.Meta">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">Meta</span></span><a class="headerlink" href="#shop.serializers.ItemSerializer.Meta" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.serializers.ItemSerializer.Meta.fields">
+<span class="sig-name descname"><span class="pre">fields</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['id',</span> <span class="pre">'title',</span> <span class="pre">'price']</span></em><a class="headerlink" href="#shop.serializers.ItemSerializer.Meta.fields" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.serializers.ItemSerializer.Meta.model">
+<span class="sig-name descname"><span class="pre">model</span></span><a class="headerlink" href="#shop.serializers.ItemSerializer.Meta.model" title="Link to this definition">¶</a></dt>
+<dd><p>псевдоним для <a class="reference internal" href="#shop.models.Item" title="shop.models.Item"><code class="xref py py-class docutils literal notranslate"><span class="pre">Item</span></code></a></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-shop.utils.pdf_generator">
+<dt class="sig sig-object py" id="shop.utils.pdf_generator.PDFGenerator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.utils.pdf_generator.</span></span><span class="sig-name descname"><span class="pre">PDFGenerator</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">template_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.utils.pdf_generator.PDFGenerator" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для генерации PDF.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.utils.pdf_generator.PDFGenerator.template_name">
+<span class="sig-name descname"><span class="pre">template_name</span></span><a class="headerlink" href="#shop.utils.pdf_generator.PDFGenerator.template_name" title="Link to this definition">¶</a></dt>
+<dd><p>Имя шаблона для генерации PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.utils.pdf_generator.PDFGenerator.generate">
+<span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">context</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Dict</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shop.utils.pdf_generator.PDFGenerator.generate" title="Link to this definition">¶</a></dt>
+<dd><p>Генерация PDF.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>context</strong> (<em>Dict</em><em>[</em><em>str</em><em>, </em><em>Any</em><em>]</em>) – Контекст для шаблона.</p></li>
+<li><p><strong>output_path</strong> (<em>str</em>) – Путь для сохранения PDF.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-shop.utils.qr_generator">
+<dt class="sig sig-object py" id="shop.utils.qr_generator.QRCodeGenerator">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.utils.qr_generator.</span></span><span class="sig-name descname"><span class="pre">QRCodeGenerator</span></span><a class="headerlink" href="#shop.utils.qr_generator.QRCodeGenerator" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для генерации QR-кодов.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.utils.qr_generator.QRCodeGenerator.generate">
+<span class="sig-name descname"><span class="pre">generate</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#shop.utils.qr_generator.QRCodeGenerator.generate" title="Link to this definition">¶</a></dt>
+<dd><p>Генерация QR-кода.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>str</em>) – Данные для кодирования в QR-код.</p></li>
+<li><p><strong>output_path</strong> (<em>str</em>) – Путь для сохранения QR-кода.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class" id="module-shop.views.cash_machine_view">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.views.cash_machine_view.</span></span><span class="sig-name descname"><span class="pre">CashMachine</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">items</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><a class="reference internal" href="#shop.models.Item" title="shop.models.Item"><span class="pre">Item</span></a><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">item_counts</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Counter</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_time</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Класс для обработки логики кассового аппарата.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.items">
+<span class="sig-name descname"><span class="pre">items</span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.items" title="Link to this definition">¶</a></dt>
+<dd><p>Список товаров.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>List[<a class="reference internal" href="#shop.models.Item" title="shop.models.Item">Item</a>]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.item_counts">
+<span class="sig-name descname"><span class="pre">item_counts</span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.item_counts" title="Link to this definition">¶</a></dt>
+<dd><p>Счетчик количества товаров.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Counter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.current_time">
+<span class="sig-name descname"><span class="pre">current_time</span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.current_time" title="Link to this definition">¶</a></dt>
+<dd><p>Текущее время.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.total_price">
+<span class="sig-name descname"><span class="pre">total_price</span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.total_price" title="Link to this definition">¶</a></dt>
+<dd><p>Общая стоимость товаров.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Decimal</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.safe_time">
+<span class="sig-name descname"><span class="pre">safe_time</span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.safe_time" title="Link to this definition">¶</a></dt>
+<dd><p>Безопасное время для использования в именах файлов.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.generate_qr_code">
+<span class="sig-name descname"><span class="pre">generate_qr_code</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pdf_url</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.generate_qr_code" title="Link to this definition">¶</a></dt>
+<dd><p>Генерация QR-кода.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pdf_url</strong> (<em>str</em>) – URL для PDF-файла.</p>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Имя файла с QR-кодом.</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachine.generate_receipt">
+<span class="sig-name descname"><span class="pre">generate_receipt</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachine.generate_receipt" title="Link to this definition">¶</a></dt>
+<dd><p>Генерация чека.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Результат<span class="colon">:</span></dt>
+<dd class="field-odd"><p>Имя файла с чеком.</p>
+</dd>
+<dt class="field-even">Тип результата<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachineView">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">shop.views.cash_machine_view.</span></span><span class="sig-name descname"><span class="pre">CashMachineView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachineView" title="Link to this definition">¶</a></dt>
+<dd><p>Базовые классы: <code class="xref py py-class docutils literal notranslate"><span class="pre">APIView</span></code></p>
+<p>Представление для обработки запросов к кассовому аппарату.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="shop.views.cash_machine_view.CashMachineView.post">
+<span class="sig-name descname"><span class="pre">post</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">request</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Request</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">JsonResponse</span></span></span><a class="headerlink" href="#shop.views.cash_machine_view.CashMachineView.post" title="Link to this definition">¶</a></dt>
+<dd><p>Обработка POST-запроса.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Параметры<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>request</strong> (<em>Request</em>) – Запрос.</p>
+</dd>
+<dt class="field-even">Результат<span class="colon">:</span></dt>
+<dd class="field-even"><p>Ответ с URL QR-кода или сообщением об ошибке.</p>
+</dd>
+<dt class="field-odd">Тип результата<span class="colon">:</span></dt>
+<dd class="field-odd"><p>JsonResponse</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">Cash Register</a></h1>
+
+
+
+
+
+
+
+
+<h3>Навигация</h3>
+<p class="caption" role="heading"><span class="caption-text">Содержание:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Модули</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#shop.log_config.LogConfig"><code class="docutils literal notranslate"><span class="pre">LogConfig</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.models.Item"><code class="docutils literal notranslate"><span class="pre">Item</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.serializers.ItemSerializer"><code class="docutils literal notranslate"><span class="pre">ItemSerializer</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.utils.pdf_generator.PDFGenerator"><code class="docutils literal notranslate"><span class="pre">PDFGenerator</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.utils.qr_generator.QRCodeGenerator"><code class="docutils literal notranslate"><span class="pre">QRCodeGenerator</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.views.cash_machine_view.CashMachine"><code class="docutils literal notranslate"><span class="pre">CashMachine</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shop.views.cash_machine_view.CashMachineView"><code class="docutils literal notranslate"><span class="pre">CashMachineView</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tests.html">Тесты</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="index.html" title="предыдущая глава">Добро пожаловать в документацию Cash Register!</a></li>
+      <li>Next: <a href="tests.html" title="следующая глава">Тесты</a></li>
+  </ul></li>
+</ul>
+</div>
+<search id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Быстрый поиск</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Искать" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;2024, anxnas.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 7.4.7</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 0.7.16</a>
+      
+      |
+      <a href="_sources/modules.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
