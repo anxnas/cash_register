@@ -24,7 +24,6 @@ ENV DJANGO_SETTINGS_MODULE=cash_register.settings
 
 # Выполняем миграции и собираем статику
 RUN python manage.py migrate
-RUN python manage.py collectstatic --noinput
 
 # Открываем порт 8000 для доступа к приложению
 EXPOSE 8000
