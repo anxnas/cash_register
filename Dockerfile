@@ -4,6 +4,12 @@ FROM python:3.9-slim
 # Устанавливаем рабочую директорию
 WORKDIR /app
 
+# Устанавливаем зависимости для wkhtmltopdf
+RUN apt-get update && apt-get install -y \
+    wkhtmltopdf \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
 # Копируем файл зависимостей
 COPY requirements.txt .
 
