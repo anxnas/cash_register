@@ -1,0 +1,36 @@
+2024-08-17 17:09:55,420 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:10:13,033 - shop.utils.pdf_generator - INFO - PDF успешно создан: D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\media\receipt_17-08-2024_14-10.pdf
+2024-08-17 17:10:13,140 - shop.utils.qr_generator - INFO - QR-код успешно создан: D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\media\qr_17-08-2024_14-10.png
+2024-08-17 17:10:13,141 - shop.views.cash_machine_view - INFO - PDF и QR-код успешно созданы: receipt_17-08-2024_14-10.pdf, qr_17-08-2024_14-10.png
+2024-08-17 17:22:45,328 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:23:19,597 - shop.utils.pdf_generator - INFO - PDF успешно создан: D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\media\receipt_17-08-2024_14-23.pdf
+2024-08-17 17:23:19,622 - shop.utils.qr_generator - INFO - QR-код успешно создан: D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\media\qr_17-08-2024_14-23.png
+2024-08-17 17:23:19,622 - shop.views.cash_machine_view - INFO - PDF и QR-код успешно созданы: receipt_17-08-2024_14-23.pdf, qr_17-08-2024_14-23.png
+2024-08-17 17:26:48,953 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\manage.py changed, reloading.
+2024-08-17 17:26:49,555 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:27:01,762 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\log_config.py changed, reloading.
+2024-08-17 17:27:02,342 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:27:44,178 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\log_config.py changed, reloading.
+2024-08-17 17:27:44,829 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:27:54,922 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\log_config.py changed, reloading.
+2024-08-17 17:27:55,618 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:28:16,273 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\utils\pdf_generator.py changed, reloading.
+2024-08-17 17:28:16,902 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:28:29,061 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\utils\pdf_generator.py changed, reloading.
+2024-08-17 17:28:29,715 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:28:39,839 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\utils\pdf_generator.py changed, reloading.
+2024-08-17 17:28:40,423 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:28:56,881 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\utils\qr_generator.py changed, reloading.
+2024-08-17 17:28:57,511 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:29:05,437 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\utils\qr_generator.py changed, reloading.
+2024-08-17 17:29:06,041 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:29:57,389 - django.utils.autoreload - INFO - D:\PycharmProjects\ScriptsAndBots\Тестовое задание Гроссбит\cash_register\shop\views\cash_machine_view.py changed, reloading.
+2024-08-17 17:29:58,025 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 17:38:45,044 - shop.views.cash_machine_view - INFO - PDF и QR-код успешно созданы: receipt.pdf, qr.png
+2024-08-17 17:38:45,092 - shop.utils.pdf_generator - INFO - PDF успешно создан: test_receipt.pdf
+2024-08-17 17:38:45,093 - shop.utils.qr_generator - INFO - QR-код успешно создан: test_qr.png
+2024-08-17 17:39:38,646 - shop.views.cash_machine_view - INFO - PDF и QR-код успешно созданы: receipt.pdf, qr.png
+2024-08-17 17:39:38,647 - shop.utils.pdf_generator - INFO - PDF успешно создан: test_receipt.pdf
+2024-08-17 17:39:38,648 - shop.utils.qr_generator - INFO - QR-код успешно создан: test_qr.png
+2024-08-17 17:41:24,082 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
+2024-08-17 18:25:54,638 - django.utils.autoreload - INFO - Watching for file changes with StatReloader
